@@ -23,6 +23,7 @@ if settings.AUTHENTICATION_METHOD == "django":
             name="standalone_logout",
             kwargs={"next_page": "/"},
         ),
+        url("^changepw/", account_views.password_change, name="account_change_password"),
     ]
 else:
     urlpatterns = [

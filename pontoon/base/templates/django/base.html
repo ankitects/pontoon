@@ -103,9 +103,13 @@
 
     <section id="error">
       <div class="inner">
-        {% block content %}
-        {% endblock %}
       </div>
+    </section>
+
+    <section id="main">
+      <style>#main input { float: none; } #main { max-width: 20em; margin-left: auto; margin-right: auto; }</style>
+      {% block content %}
+      {% endblock %}
     </section>
 
     <!-- Javascript at the bottom for fast page loading -->
